@@ -60,6 +60,10 @@ i, p, h1, h3 {
     font-family: 'Rubik', sans-serif;
 }
 
+h3 {
+    font-size: clamp(20px, 5vw, 25px );
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -72,27 +76,30 @@ body {
 }
 
 .welcome-wrapper {
-    height: 91vh;
+    height: 95vh;
     display: flex;
     align-items: center;
 }
 
 .welcome-wrapper > h1 {
     padding-left: 6vw;
-    font-size: clamp(40px, 10vw, 75px );
+    font-size: clamp(40px, 12vw, 75px );
 }
 
-.about-me {
+.about-me, .projects-section{
     padding-left: 1em;
     padding-bottom: 4vh;
     border-top: 1px solid var(--border-color);
+}
+
+.about-me {
     background-color: rgb(21, 20, 20);
 }
 
-.about-me p {
+.about-me p, .projects-section p {
     margin: 0;
     padding-left: 1em;
-    font-size: 12px;
+    font-size: clamp(10px, 5vw, 13px);
 }
 
 .coding-logos img {
@@ -107,6 +114,45 @@ body {
     padding-left: 1.2em;
     gap: 1em;
     padding-top: .8em;;
+}
+
+.project-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    padding: 2em 0 .7em 0;
+    flex-wrap: wrap;
+}
+
+.project {
+    height: 200px;
+    width: 150px;
+    border: 4px solid var(--border-color);
+    border-radius: 5%;
+}
+
+.project:hover {
+    border: 4px solid paleturquoise;
+}
+
+
+.project > p, .project > img {
+    opacity: 10%;
+    text-align: center;
+    padding-right: 12px;
+    padding-top: 60%;
+    font-size: 18px;
+}
+
+.project-example:hover {
+    opacity: 100%;
+}
+
+.project-description p {
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    padding: 5px 0 0 0;
 }
 
 .scroll-to-top {
