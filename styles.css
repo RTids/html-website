@@ -3,10 +3,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --border-color: rgba(54, 53, 53, 0.336);
+}
+
 nav {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid rgba(54, 53, 53, 0.336);
+    border-bottom: 1px solid var(--border-color);
     background-color: rgb(27, 26, 26);
 }
 
@@ -34,7 +38,7 @@ nav > .nav-item {
     padding-right: 2vw;
 }
 
-i, p, h1 {
+i, p, h1, h3 {
     color: white;
     font-family: 'Rubik', sans-serif;
 }
@@ -42,4 +46,27 @@ i, p, h1 {
 body {
     background-color: rgb(33, 32, 32);
     margin: 0;
+}
+
+.welcome-wrapper {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-wrapper > h1 {
+    padding-left: 6vw;
+    font-size: clamp(40px, 10vw, 75px );
+}
+
+.about-me {
+    padding-left: 1em;
+    border-top: 1px solid var(--border-color);
+    margin-bottom: 5vh;;
+}
+
+.about-me p {
+    margin: 0;
+    padding-left: 1em;
+    font-size: 12px;
 }
