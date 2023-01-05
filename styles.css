@@ -1,5 +1,5 @@
 * {
-    /*border: 0.1px solid white; */
+    /* border: 0.1px solid white; */
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -86,7 +86,7 @@ body {
     font-size: clamp(40px, 12vw, 75px );
 }
 
-.about-me, .projects-section{
+.about-me, .projects-section, .blender{
     padding-left: 1em;
     padding-bottom: 4vh;
     border-top: 1px solid var(--border-color);
@@ -96,7 +96,7 @@ body {
     background-color: rgb(21, 20, 20);
 }
 
-.about-me p, .projects-section p {
+.about-me p, .projects-section p, .blender p {
     margin: 0;
     padding-left: 1em;
     font-size: clamp(10px, 5vw, 13px);
@@ -126,7 +126,7 @@ body {
 
 .project {
     height: 200px;
-    width: 150px;
+    width: 335px;
     border: 4px solid var(--border-color);
     border-radius: 5%;
 }
@@ -136,12 +136,20 @@ body {
 }
 
 
-.project > p, .project > img {
+.project > p {
     opacity: 10%;
     text-align: center;
     padding-right: 12px;
-    padding-top: 60%;
+    padding-top: 25%;
     font-size: 18px;
+    height: 100%;
+}
+
+.project > img {
+    opacity: 20%;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .project-example:hover {
@@ -152,7 +160,8 @@ body {
     text-align: center;
     font-size: 10px;
     margin: 0;
-    padding: 5px 0 0 0;
+    padding: 1em 0 0 0;
+    max-width: 335px;
 }
 
 .scroll-to-top {
