@@ -16,6 +16,13 @@ nav {
     align-items: center;
 }
 
+button {
+    background-color: transparent;
+    font-size: clamp(20px, 3vw, 30px);
+    cursor: pointer;
+    border: 0;
+}
+
 nav > .nav-item {
     padding: .4rem .75rem;
     display: flex;
