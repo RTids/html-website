@@ -8,7 +8,15 @@
     --border-color: rgba(116, 114, 114, 0.204);
 }
 
-.nav {
+.party-mode-body {
+    background-color: pink !important;
+}
+
+.party-mode-navbar {
+    background-color: lightskyblue !important;
+}
+
+.nav-style {
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(--border-color);
@@ -78,7 +86,7 @@ a {
     cursor: pointer;
 }
 
-.body {
+.body-style {
     background-color: rgb(33, 32, 32);
     margin: 0;
 }
