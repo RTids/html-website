@@ -184,16 +184,16 @@ a {
     bottom: 10px;
     right: 11px;
     font-size: 30px;
-    color: white;
+    color: red;
     opacity: .2;
 }
 
 .projects-section .material-symbols-outlined {
     position: absolute;
-    bottom: 50px;
-    right: 6px;
+    bottom: 5px;
+    right: 50px;
     font-size: 40px !important;
-    color: white;
+    color: red;
     opacity: .2;
 }
 

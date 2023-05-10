@@ -7,12 +7,12 @@ dropBtnEl.addEventListener('click', function(){
     const navEl = document.querySelector('.nav-style')
     const aboutEl = document.querySelector('.about-me')
 
-    if (navName.textContent === 'party time...')
+    if (navName.textContent === 'website in beta...')
      {
         navName.textContent = 'welcome...'
  
     } else {
-        navName.textContent = 'party time...'
+        navName.textContent = 'website in beta...'
 
     }
 
